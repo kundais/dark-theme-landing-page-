@@ -360,6 +360,10 @@ nav a:hover {
 }
 
 @media screen and (min-width: 1550px) {
+  .img-container1 img {
+    margin-top: -100px;
+    height: 50vh;
+  }
   .main-container {
     padding: 10rem;
   }
