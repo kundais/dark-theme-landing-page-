@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap");
+
+:root {
+  --DarkBlue: hsl(217, 28%, 15%);
+  --mainBackground: hsl(218, 28%, 13%);
+  --footerBackground: hsl(216, 53%, 9%);
+  --testimonialsBackground: hsl(219, 30%, 18%);
+  --headersFont: "Raleway", sans-serif;
+  --bodyFont: "open sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--DarkBlue);
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--bodyFont);
+}
+
+.main-container {
+  padding: 2.5rem;
+  color: white;
+}
+
+/*--------------- NAV-BAR ---------------*/
+header {
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem;
+}
+
+.logo-container {
+  height: 30px;
+  width: 30px;
+}
+
+.logo-container img {
+  height: 100%;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* -----------BODY SECTION1------------- */
+.img-container1 img {
+  margin-top: -30px;
+  height: 28vh;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+.description-header {
+  font-family: var(--headersFont);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0.9rem;
+}
+
+.description-text {
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.start-btn {
+  padding: 0.8rem 5rem 0.8rem 5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(176, 68%, 64%);
+  color: white;
+}
+
+.start-btn:hover {
+  background: hsl(176, 71%, 73%);
+}
+
+/* --------------- FEATURES ------------- */
+.icon-heading {
+  font-family: var(--headersFont);
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  margin-bottom: 4.5rem;
+}
+
+/* ----------------- BODY SECTION2 --------------- */
+.img-container2 img {
+  margin-top: 3rem;
+  height: 30vh;
+}
+
+.description2 {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.description2 .productive-header {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--headersFont);
+  margin-bottom: 1rem;
+}
+
+.productive-text {
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.productive-text2 {
+  text-align: left;
+}
+
+.productive-text2 span {
+  display: block;
+  margin-top: 1rem;
+  color: hsl(176, 68%, 64%);
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 157px;
+}
+
+.productive-text2 span button {
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(176, 68%, 64%);
+  height: 20px;
+  margin-left: 0.6rem;
+}
+
+.productive-text2 span button img {
+  height: 100%;
+}
+
+.testimonial {
+  background-color: var(--testimonialsBackground);
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  text-align: left;
+  line-height: 25px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  height: 45px;
+  margin-right: 0.8rem;
+}
+
+.profile {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .management {
+  display: block;
+}
+
+/* ---------FOOTER------------ */
+
+.email-container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  background-color: var(--DarkBlue);
+  margin-top: -14rem;
+  text-align: center;
+}
+
+.email-container h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.email-container p {
+  margin-bottom: 2rem;
+}
+
+.email-input,
+.email-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.email-btn {
+  background-color: hsl(176, 68%, 64%);
+  color: white;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: var(--footerBackground);
+  color: white;
+  padding: 2.5rem;
+  margin-top: 20rem;
+  text-align: left;
+}
+
+.footer .logo {
+  margin-top: 2rem;
+}
+
+.location,
+.phone,
+.email {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  margin-left: 1rem;
+}
+
+.navigation {
+  margin-top: 2.5rem;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.navigation-second {
+  margin-top: 2.5rem;
+}
+
+/*------------------- DESKTOPS -------------- */
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav ul li a {
+    margin-right: 30px;
+  }
+
+  .img-container1 img {
+    margin-top: -10px;
+    height: 50vh;
+  }
+  .description-header {
+    line-height: 35px;
+  }
+  .description {
+    line-height: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .Icon-flex-container1,
+  .Icon-flex-container2 {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .img-container2 img {
+    height: 40vh;
+  }
+  .description2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  .testimonials {
+    display: flex;
+  }
+  .testimonial {
+    margin-right: 2rem;
+  }
+
+  .email-container {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+  }
+
+  .inputButton {
+    display: flex;
+  }
+
+  .email-container input {
+    margin-right: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .navigation {
+    display: flex;
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+  .navigation-second {
+    margin-top: 0;
+    margin-left: 3rem;
+  }
+  .flex-itemPhone {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-container2 img {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .main-container {
+    padding: 10rem;
+  }
+}
