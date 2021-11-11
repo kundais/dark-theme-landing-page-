@@ -44,6 +44,7 @@ header {
   margin: 0 auto;
   height: 100%;
   padding: 1rem;
+  max-width: 1440px;
 }
 
 .logo-container {
@@ -357,14 +358,22 @@ nav a:hover {
   .img-container2 img {
     height: 50vh;
   }
+  .main-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+  }
+
+  .email-container {
+    width: 900px;
+  }
 }
 
 @media screen and (min-width: 1550px) {
   .img-container1 img {
     margin-top: -100px;
     height: 50vh;
-  }
-  .main-container {
-    padding: 10rem;
   }
 }
